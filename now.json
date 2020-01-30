@@ -1,0 +1,56 @@
+{
+  "version": 1,
+  "builds": [{ "src": "index.js", "use": "@now/node-server" }],
+  "routes": [
+    {
+      "src": "/artists",
+      "dest": "/app.js",
+      "methods": ["POST"]
+    },
+    {
+      "src": "/artists",
+      "dest": "/app.js",
+      "methods": ["GET"]
+    },
+    {
+      "src": "/artists/:artistId",
+      "dest": "/app.js",
+      "methods": ["POST"]
+    },
+    {
+      "src": "/artists/:artistId",
+      "dest": "/app.js",
+      "methods": ["GET"]
+    },
+    {
+      "src": "/artists/:artistId/albums",
+      "dest": "/app.js",
+      "methods": ["POST"]
+    },
+    {
+      "src": "/artists/:artistId/albums",
+      "dest": "/app.js",
+      "methods": ["GET"]
+    },
+    {
+      "src": "/artists/:artistId/albums/:albumId",
+      "dest": "/app.js",
+      "methods": ["POST"]
+    },
+    {
+      "src": "/artists/:artistId/albums/:albumId",
+      "dest": "/app.js",
+      "methods": ["GET"]
+    },
+    {
+      "src": "/albums/:albumId/song",
+      "dest": "/app.js",
+      "methods": ["GET"]
+    },
+    {
+      "src": "/albums/:albumId/song",
+      "dest": "/app.js",
+      "methods": ["GET"]
+    }
+  ]
+}
